@@ -11,7 +11,7 @@ Initial downloads setup you need to finish:
 
 [Python3 Installation](https://realpython.com/installing-python/): used to run the source code.
 [VirtualBox Installation](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1) is the software that actually runs the VM. Please install the platform package for your operating system.
-[FSND-Virtual-Machine](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip): fork the repository on github and clone it with ```git clone http://github.com/<username>/fullstack-nanodegree-vm fullstack``` with your own username. Starting up vagrant (the virtual machine) will initialize it with the correct software.
+[FSND-Catalog](https://github.com/narquie/fsnd-catalog): fork the repository on github and clone it with ```git clone http://github.com/<username>/fsnd-catalog``` with your own username. Starting up vagrant (the virtual machine) will initialize it with the correct software.
 [Vagrant](https://www.vagrantup.com/downloads.html) is the virtual machine itself. At this step you can cd to the vagrant folder within FSND ```cd /vagrant``` and use the shell command ```vagrant up``` and ```vagrant ssh```.
 
 The webserver has all of its files and code in the ```catalog``` folder, so cd'ing into it with ```cd /catalog``` will grant you access.
