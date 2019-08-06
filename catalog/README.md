@@ -1,8 +1,11 @@
 # README
 ## Overview
-This code is used to create a board game website on the virtual machine that runs this code. Users can log in through third party authentication, add and edit the site, and view the results in real time.
+This code is used to create a board game website on the virtual machine that runs this code. 
+Users can log in through third party authentication, add and edit the site, and view the results in real time.
 ## What the code does
-The code implements Flask and SQLAlchemy to create the website and mantain the database, respectively. Everything is set up so that the machine can interpret the HTTP at a high level and return TCP commands on a low level. These inherent commands can be quite tricky so the key to debugging is watching the HTTP calls and finding all of the 400 errors.
+The code implements Flask and SQLAlchemy to create the website and mantain the database, respectively. 
+Everything is set up so that the machine can interpret the HTTP at a high level and return TCP commands on a low level. 
+These inherent commands can be quite tricky so the key to debugging is watching the HTTP calls and finding all of the 400 errors.
 ## Setup
 Initial downloads setup you need to finish:
 
@@ -18,4 +21,5 @@ To initialize the database, you need to run ```python database_setup.py```. Afte
 Use ```python project.py``` to run the code itself.
 
 ## How to interpret the code and results
-The code communicates with the user by setting up pages in HTML / CSS (which make the site easier to handle), runs on SQL to bring the relevant data to the users that are displayed in the web pages. The python code is capable of managing the issues and requests from Facebook and Google as well as the users itself, and is the core power of the web server. 
+The code communicates with the user by setting up pages in HTML / CSS (which make the site easier to handle), runs on SQL to bring the relevant data to the users that are displayed in the web pages. 
+The python code is capable of managing the issues and requests from Facebook and Google as well as the users itself, and is the core power of the web server. 
