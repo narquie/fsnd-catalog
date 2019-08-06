@@ -24,4 +24,7 @@ Now, head to a web browser (Edge, Firefox, Chrome...) and type in ```http://loca
 
 ## How to interpret the code and results
 The code communicates with the user by setting up pages in HTML / CSS (which make the site easier to handle), runs on SQL to bring the relevant data to the users that are displayed in the web pages. 
-The python code is capable of managing the issues and requests from Facebook and Google as well as the users itself, and is the core power of the web server. 
+The python code is capable of managing the issues and requests from Facebook and Google as well as the users itself, and is the core power of the web server.
+
+## Attributions
+Much of this code was my modifications of the Udacity Full Stack Nanodegree classwork.
