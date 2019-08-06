@@ -1,0 +1,65 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row divider green">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+			<h1>Edit Board Game</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1 padding-top">
+			<form action="#" method = "post">
+				<div class="form-group">
+					<!-- Choices for what to edit -->
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="100" class="form-control" name="name" value="{{item.name }}">
+
+					<label for="description">Description:</label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description">{{item.description}}</textarea>
+
+					<label for="price">Price:</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type ="text" maxlength="10" class="form-control" name="price" value="{{item.price}}">
+					</div>
+
+					<label for="difficulty">Difficulty:</label>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="difficulty" id="difficulty1" value="Light" {% if item.difficulty == 'Light'%}checked{%endif%}>Light
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="difficulty" id="difficulty2" value="Light-Medium" {% if item.difficulty == 'Light-Medium' %}checked{%endif%}>Light-Medium
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="difficulty" id="difficulty3" value="Medium" {% if item.difficulty == 'Medium'%}checked{%endif%}>Medium
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="difficulty" id="difficulty4" value="Medium-Heavy" {%if item.difficulty =='Medium-Heavy'%}checked{%endif%}>Medium-Heavy
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="difficulty" id="difficulty5" value="Heavy" {%if item.difficulty =='Heavy'%}checked{%endif%}>Heavy
+					  </label>
+					</div>
+					<button type="submit" class="btn btn-default" id="submit" type="submit">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Save</button>
+					<a href = '{{url_for('showCategories')}}'>
+						<button class="btn btn-default delete" type="button">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
